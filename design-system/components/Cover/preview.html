@@ -1,0 +1,28 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&family=Inter+Tight:wght@400..600&display=swap">
+<style>
+html,body{margin:0;height:288px;background:var(--ground);overflow:hidden}
+.wrap{position:relative;width:960px;height:288px}
+.ink{fill:var(--ink)}.ground{fill:var(--ground)}.soft{fill:var(--ink-muted)}
+.rule{stroke:var(--rule);stroke-width:1}.rule-strong{stroke:var(--rule-strong);stroke-width:1}
+.name{position:absolute;left:40px;bottom:64px;width:420px;font-family:var(--font-display, "Archivo", Arial, sans-serif);font-weight:500;font-size:64px;line-height:.95;letter-spacing:-2px;color:var(--ink);margin:0}
+.tag{position:absolute;left:40px;bottom:36px;width:420px;font-family:"Inter Tight",Arial,sans-serif;font-size:14px;color:var(--ink-muted);margin:0}
+svg{position:absolute;left:480px;top:0}
+</style></head><body><div class="wrap">
+<svg width="480" height="288" viewBox="0 0 480 288" aria-hidden="true">
+<!-- blocks: block (ink) 200x288 slab bleeding off top and bottom; ground stays the second field -->
+<!-- arrangement: one tall slab at the right edge with the ground as negative space, the way the decks use one inverted block -->
+<!-- pattern: editorial hairlines; README says thin rules and no decoration, so three rule-strong lines and two rule lines cross the ground -->
+<!-- steps: space-column 48, space-rule 28, radius-none 0 -->
+<rect class="ink" x="280" y="0" width="200" height="288" rx="0"/>
+<line class="rule-strong" x1="40" y1="76" x2="232" y2="76"/>
+<line class="rule" x1="40" y1="132" x2="232" y2="132"/>
+<line class="rule-strong" x1="40" y1="188" x2="232" y2="188"/>
+<line class="rule" x1="40" y1="244" x2="232" y2="244"/>
+<rect class="ground" x="328" y="188" width="104" height="1" rx="0"/>
+</svg>
+<p class="name">Yohji Yamamoto x HBS</p>
+<p class="tag">Black, white and space for the IFC Japan decks</p>
+</div></body></html>
